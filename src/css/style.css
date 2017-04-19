@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.hidden {
+  display: none; }
+
+.checkout-progress-indicator.hide-all {
+  display: none; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -5860,5 +5874,32 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+body {
+  font-family: Open Sans,Trebouchet,Helvetica,Arial,sans-serif; }
+
+header {
+  background-color: #000;
+  height: 5rem; }
+
+.logo {
+  margin: 0 0 0 1rem; }
+
+.sidebar {
+  background: #2d2d2d; }
+
+.navbar {
+  color: #adafb2; }
+  .navbar .navbar__title {
+    padding: 1.1rem 1.25rem 1.1rem 1.636rem; }
+  .navbar .navbar__link {
+    color: #adafb2;
+    display: block;
+    padding: .6rem .8rem; }
+    .navbar .navbar__link:hover {
+      background-color: #202020;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

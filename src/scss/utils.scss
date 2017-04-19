@@ -1,0 +1,196 @@
+$fix-mqs: false !default;
+@mixin respond-min-max($min, $max) {
+  @if $fix-mqs {
+    @if $fix-mqs >= $min { //mejorar
+        @content;
+    }
+  }
+  @else {
+      @media screen and (min-width: $min) and (max-width: $max) {
+        @content;
+      }
+  }
+}
+
+@mixin respond-min($width) {
+    @if $fix-mqs {
+        @if $fix-mqs >= $width {
+            @content;
+        }
+    } @else {
+        @media screen and (min-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin respond-max($width) {
+    @if $fix-mqs {
+        @if $fix-mqs <= $width {
+            @content;
+        }
+    } @else {
+        @media screen and (max-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin respond-min-height($height) {
+    @if $fix-mqs {
+        @if $fix-mqs <= $height {
+            @content;
+        }
+    } @else {
+        @media screen and (min-height: $height) {
+            @content;
+        }
+    }
+}
+
+
+$old-ie: false !default;
+
+@mixin old-ie {
+    @if $old-ie {
+        @content;
+    }
+}
+
+@function px-rem($size) {
+    @return $size / 10 * (10 / 16) + rem;
+}
+
+// --------------------------------------------------
+//  Font size
+// --------------------------------------------------
+@mixin font-size($size-value: 16) {
+    font-size: $size-value + px;
+    font-size: ($size-value/16) + rem;
+}
+
+// --------------------------------------------------
+//  Grid
+// --------------------------------------------------
+@mixin grid-width($totalBlocks: 1, $multiplier: 1) {
+    width: $totalBlocks / $multiplier * 100%;
+}
+
+// --------------------------------------------------
+//  Unstyled list
+// --------------------------------------------------
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display:table;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+// --------------------------------------------------
+//  Vissualyhidden
+// --------------------------------------------------
+@mixin visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@mixin show {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkout-progress-indicator {
+	&.hide-all{
+		display: none;
+	}
+}
+
+
+// --------------------------------------------------
+//  Vertical align
+// --------------------------------------------------
+%vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// --------------------------------------------------
+//  Horizontal align
+// --------------------------------------------------
+%horizontal-align {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// --------------------------------------------------
+//  Centered
+// --------------------------------------------------
+%centered-align {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin center-align($important) {
+    top: 50%$important;
+    left: 50%$important;
+    transform: translate(-50%, -50%)$important;
+}
+
+// --------------------------------------------------
+//  Default (overwrite)
+// --------------------------------------------------
+%default-align {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+}
+
+// --------------------------------------------------
+//  Gradients
+// --------------------------------------------------
+@mixin gradient($color1: $white, $color2: $gray, $opacity1: 1, $opacity2: 1) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, rgba($color1, $opacity1) 0%, rgba($color2, $opacity2) 100%);
+    background: -webkit-linear-gradient(top, rgba($color1, $opacity1) 0%, rgba($color2, $opacity2) 100%);
+    background: linear-gradient(to bottom, rgba($color1, $opacity1) 0%, rgba($color2, $opacity2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2', GradientType=0);
+}
+
+@mixin gradientLine($color) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5b5b5+0,b5b5b5+100&0+0,1+15,1+85,0+100 */
+    background: -moz-linear-gradient(left, rgba($color, 0) 0%, rgba($color, 1) 15%, rgba($color, 1) 85%, rgba($color, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba($color, 0) 0%, rgba($color, 1) 15%, rgba($color, 1) 85%, rgba($color, 0) 100%);
+    background: linear-gradient(to right, rgba($color, 0) 0%, rgba($color, 1) 15%, rgba($color, 1) 85%, rgba($color, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='$color', GradientType=1);
+}
+
+@mixin line($color) {
+    @include gradientLine($color);
+    content: '';
+    clear: both;
+    display: block;
+    height: px-rem(1);
+}

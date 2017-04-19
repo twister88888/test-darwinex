@@ -1,1 +1,36 @@
+body {
+  font-family: Open Sans,Trebouchet,Helvetica,Arial,sans-serif;
+}
 
+header {
+  background-color: $gray-base;
+  height: px-rem(80);
+}
+
+.logo {
+  margin: 0 0 0 1rem;
+}
+
+.sidebar {
+  background: #2d2d2d;
+}
+
+.navbar{
+  color: #adafb2;
+
+  .navbar__title{
+    padding: 1.1rem 1.25rem 1.1rem 1.636rem;
+  }
+
+  .navbar__link {
+    color: #adafb2;
+    display: block;
+    padding: .6rem .8rem;
+    &:hover {
+      background-color: #202020;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
