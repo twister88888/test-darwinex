@@ -1,0 +1,74 @@
+.sidebar-navbar {
+  background-color: #2d2d2d;
+  display: inline-block;
+  font-size: 11px;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 5rem;
+  vertical-align: top;
+  width: px-rem(301);
+
+  .icon {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 6px;
+    min-width: 2.182rem;
+    text-align: center;
+  }
+}
+
+.navbar-primary {
+  color: #adafb2;
+}
+
+.navbar-primary__title {
+  display: block;
+  letter-spacing: .2rem;
+  padding: 1.1rem 1.25rem 1.1rem 1.636rem;
+  text-transform: uppercase;
+}
+
+.navbar__link {
+  color: #adafb2;
+  display: block;
+  padding: .6rem .8rem;
+  &:hover {
+    background-color: #202020;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.navbar-trader {
+  background-color: #3da0cc;
+  bottom: 0;
+  position: fixed;
+  width: px-rem(301);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.navbar-trader__list {
+  .navbar__link {
+    color: $white;
+    &:hover {
+      background-color: #3293be;
+    }
+  }
+}
+
+.navbar-trader__list--hidden {
+  display: none;
+}
+
+.navbar-trader__create {
+  border-top: 1px solid #0089ad;
+  margin-top: .35rem;
+  padding: px-rem(12) 0;
+  text-align: center;
+}
