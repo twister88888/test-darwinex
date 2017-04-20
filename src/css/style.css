@@ -60,6 +60,90 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'darwinex-icon';
+  src: url("../fonts/darwinex-icon.eot?16270950");
+  src: url("../fonts/darwinex-icon.eot?16270950#iefix") format("embedded-opentype"), url("../fonts/darwinex-icon.woff2?16270950") format("woff2"), url("../fonts/darwinex-icon.woff?16270950") format("woff"), url("../fonts/darwinex-icon.ttf?16270950") format("truetype"), url("../fonts/darwinex-icon.svg?16270950#darwinex-icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'darwinex-icon';
+    src: url('../fonts/darwinex-icon.svg?16270950#darwinex-icon') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "darwinex-icon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-circle:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-grid:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-trophy:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-compass:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-medal:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-list:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-owl:before {
+  content: '\e808'; }
+
+/* '' */
+.icon-bill:before {
+  content: '\e809'; }
+
+/* '' */
+.icon-rebates:before {
+  content: '\e80a'; }
+
+/* '' */
+.icon-widgets:before {
+  content: '\e80b'; }
+
+/* '' */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -299,8 +383,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -5876,30 +5960,111 @@ button.close {
     display: none !important; } }
 
 body {
-  font-family: Open Sans,Trebouchet,Helvetica,Arial,sans-serif; }
+  color: #fff;
+  font-family: Open Sans,Trebouchet,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.5; }
+
+a {
+  color: #fff; }
 
 header {
   background-color: #000;
   height: 5rem; }
 
 .logo {
-  margin: 0 0 0 1rem; }
+  height: 5rem;
+  margin: 0; }
 
-.sidebar {
-  background: #2d2d2d; }
+.logo__img {
+  border: 0;
+  vertical-align: middle; }
 
-.navbar {
+.main-column {
+  background-color: #202020;
+  display: inline-block;
+  width: 100%; }
+
+.sidebar-navbar {
+  background-color: #2d2d2d;
+  display: inline-block;
+  font-size: 11px;
+  height: 100%;
+  vertical-align: top;
+  width: 18.8125rem; }
+
+.navbar-primary {
   color: #adafb2; }
-  .navbar .navbar__title {
-    padding: 1.1rem 1.25rem 1.1rem 1.636rem; }
-  .navbar .navbar__link {
-    color: #adafb2;
-    display: block;
-    padding: .6rem .8rem; }
-    .navbar .navbar__link:hover {
-      background-color: #202020;
-      color: #fff;
-      cursor: pointer;
-      text-decoration: none; }
+
+.navbar-primary__title {
+  display: block;
+  letter-spacing: .2rem;
+  padding: 1.1rem 1.25rem 1.1rem 1.636rem;
+  text-transform: uppercase; }
+
+.navbar__link {
+  color: #adafb2;
+  display: block;
+  padding: .6rem .8rem; }
+  .navbar__link:hover {
+    background-color: #202020;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none; }
+
+.navbar-trader {
+  background-color: #3da0cc; }
+
+.navbar-trader__list .navbar__link {
+  color: #fff; }
+  .navbar-trader__list .navbar__link:hover {
+    background-color: #3293be; }
+
+.navbar-trader__create {
+  border-top: 1px solid #0089ad;
+  margin-top: .35rem;
+  padding: 0.75rem 0;
+  text-align: center; }
+
+.icon {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 6px;
+  min-width: 2.182rem;
+  text-align: center; }
+
+.btn {
+  /*display: block;*/
+  padding: .75rem 1.25rem;
+  text-transform: uppercase; }
+
+.btn-primary {
+  font-size: 13px;
+  text-align: center; }
+
+.btn-secondary {
+  color: #fff;
+  font-size: 12px;
+  text-align: left; }
+
+.btn-navbar-nobutton {
+  background-color: inherit;
+  width: 100%; }
+  .btn-navbar-nobutton:hover, .btn-navbar-nobutton:focus {
+    background-color: #3293be;
+    color: #fff; }
+  .btn-navbar-nobutton span {
+    float: right; }
+
+.btn-create {
+  background-color: #fff;
+  border-radius: 2.5454rem;
+  color: #202020;
+  border-color: #fff;
+  padding: 0.475rem 1.8363rem; }
+  .btn-create:hover {
+    background-color: #e6e6e6;
+    border-color: #fff;
+    color: #202020; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+.btn {
+   /*display: block;*/
+   padding: .75rem 1.25rem;
+   text-transform: uppercase;
+}
+
+.btn-primary {
+   font-size: 13px;
+   text-align: center;
+}
+
+.btn-secondary {
+   color: $white;
+   font-size: 12px;
+   text-align: left;
+}
+
+.btn-navbar-nobutton {
+   background-color: inherit;
+   width: 100%;
+   &:hover, &:focus {
+      background-color: #3293be;
+      color: $white;
+   }
+   span {
+      float: right;
+   }
+}
+
+.btn-create {
+   background-color: $white;
+   border-radius: 2.5454rem;
+   color: #202020;
+   border-color: $white;
+   padding: 0.475rem 1.8363rem;
+   &:hover {
+      background-color: #e6e6e6;
+      border-color: $white;
+      color: #202020;
+   }
+}
