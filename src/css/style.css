@@ -5983,11 +5983,8 @@ header {
 
 .main-column {
   background-color: #202020;
-  display: inline-block;
-  width: calc(100% - px-rem(301)); }
-
-.hidden {
-  display: none; }
+  float: right;
+  width: calc(100% - 188.13px); }
 
 .sidebar-navbar {
   background-color: #2d2d2d;
@@ -5996,8 +5993,15 @@ header {
   height: 100%;
   overflow: auto;
   position: fixed;
+  top: 5rem;
   vertical-align: top;
   width: 18.8125rem; }
+  .sidebar-navbar .icon {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 6px;
+    min-width: 2.182rem;
+    text-align: center; }
 
 .navbar-primary {
   color: #adafb2; }
@@ -6043,13 +6047,6 @@ header {
   padding: 0.75rem 0;
   text-align: center; }
 
-.icon {
-  display: inline-block;
-  font-size: 12px;
-  margin-right: 6px;
-  min-width: 2.182rem;
-  text-align: center; }
-
 .btn {
   /*display: block;*/
   padding: .75rem 1.25rem;
@@ -6084,104 +6081,90 @@ header {
     border-color: #fff;
     color: #202020; }
 
-/*!
- * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-body {
-  overflow-x: hidden; }
+.btn-pagination {
+  color: #505050;
+  border: 1px solid #505050;
+  border-radius: 50%;
+  line-height: 0.375rem;
+  font-size: 1.3rem;
+  height: 22px;
+  width: 22px; }
 
-/* Toggle Styles */
-#wrapper {
-  padding-left: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
-#wrapper.toggled {
-  padding-left: 250px; }
-
-#sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  left: 250px;
-  width: 0;
-  height: 100%;
-  margin-left: -250px;
-  overflow-y: auto;
-  background: #000;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
-#wrapper.toggled #sidebar-wrapper {
-  width: 250px; }
-
-#page-content-wrapper {
-  width: 100%;
-  position: absolute;
-  padding: 15px; }
-
-#wrapper.toggled #page-content-wrapper {
-  position: absolute;
-  margin-right: -250px; }
-
-/* Sidebar Styles */
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.sidebar-nav li {
-  text-indent: 20px;
-  line-height: 40px; }
-
-.sidebar-nav li a {
+.user {
   display: block;
-  text-decoration: none;
-  color: #999999; }
+  padding: 5rem 6.25rem 1.875rem 6.25rem; }
 
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2); }
+.user__icon {
+  background-color: #67D2C8;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 0.625rem;
+  padding: 1.5rem; }
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none; }
+.user__detail {
+  display: inline-block; }
 
-.sidebar-nav > .sidebar-brand {
-  height: 65px;
-  font-size: 18px;
-  line-height: 60px; }
+.user__name {
+  color: #adafb2;
+  display: block; }
 
-.sidebar-nav > .sidebar-brand a {
-  color: #999999; }
+.user__account {
+  display: block; }
 
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none; }
+.user__notifications {
+  background-color: #505050;
+  border-radius: 3px;
+  color: #00C9FF;
+  margin-left: 0.1875rem;
+  padding: 0 0.3125rem; }
 
-@media (min-width: 768px) {
-  #wrapper {
-    padding-left: 0; }
-  #wrapper.toggled {
-    padding-left: 250px; }
-  #sidebar-wrapper {
-    width: 0; }
-  #wrapper.toggled #sidebar-wrapper {
-    width: 250px; }
-  #page-content-wrapper {
-    padding: 20px;
-    position: relative; }
-  #wrapper.toggled #page-content-wrapper {
-    position: relative;
-    margin-right: 0; } }
+.news {
+  display: block;
+  padding: 0 6.25rem 1.875rem 6.5625rem; }
+
+.news__item {
+  width: 46%; }
+
+.nav {
+  background-color: #373737;
+  display: block; }
+
+.nav__item {
+  display: inline-block;
+  padding: 1.5625rem 0.625rem; }
+  .nav__item span {
+    display: inline-block; }
+
+.nav__view {
+  width: 200px;
+  font-size: 1.182rem; }
+
+.nav__filter {
+  border: 1px solid grey;
+  border-width: 0 1px 0 0; }
+
+.nav__order {
+  float: right; }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  width: 100%; }
+
+/*
+.pagination__result {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.pagination__arrow {
+  display: inline-block;
+  float: right;
+  width: 50%;
+}
+*/
 
 /*# sourceMappingURL=style.css.map */

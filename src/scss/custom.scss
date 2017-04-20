@@ -27,10 +27,6 @@ header {
 
 .main-column {
    background-color: #202020;
-   display: inline-block;
-   width: calc(100% - px-rem(301));
-}
-
-.hidden {
-  display: none;
+   float: right;
+   width: calc(100% - 188.13px);
 }
