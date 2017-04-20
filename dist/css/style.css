@@ -5984,13 +5984,18 @@ header {
 .main-column {
   background-color: #202020;
   display: inline-block;
-  width: 100%; }
+  width: calc(100% - px-rem(301)); }
+
+.hidden {
+  display: none; }
 
 .sidebar-navbar {
   background-color: #2d2d2d;
   display: inline-block;
   font-size: 11px;
   height: 100%;
+  overflow: auto;
+  position: fixed;
   vertical-align: top;
   width: 18.8125rem; }
 
@@ -6014,12 +6019,23 @@ header {
     text-decoration: none; }
 
 .navbar-trader {
-  background-color: #3da0cc; }
+  background-color: #3da0cc;
+  bottom: 0;
+  position: fixed;
+  width: 18.8125rem;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .navbar-trader__list .navbar__link {
   color: #fff; }
   .navbar-trader__list .navbar__link:hover {
     background-color: #3293be; }
+
+.navbar-trader__list--hidden {
+  display: none; }
 
 .navbar-trader__create {
   border-top: 1px solid #0089ad;

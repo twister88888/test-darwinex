@@ -22,59 +22,7 @@
          </div>
       </div>
    </header>
-   <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Simple Sidebar</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-
-   <!--<div class="main">
+   <div class="main">
       <div class="container-fluid">
          <div class="row">
             <aside class="sidebar-navbar" role="sidebar">
@@ -87,16 +35,18 @@
                   </div>
                </div>
                <div class="navbar-trader">
-                  <button type="button" class="btn btn-secondary btn-navbar-nobutton">Are you trader? <span class="glyphicon glyphicon-remove"></span></button>
-                  <div class="navbar-trader__list">
+                  <button role="button" data-toggle="collapse" data-target="#traderList" class="btn btn-secondary btn-navbar-nobutton">
+                    Are you trader? <!--<span class="glyphicon glyphicon-remove collapse"></span>-->
+                  </button>
+                  <div class="navbar-trader__list collapse" id="traderList">
                      <a class="navbar__link" href="#"><i class="icon icon-trophy"></i>Darwinia</a>
                      <a class="navbar__link" href="#"><i class="icon icon-medal"></i>Hall of Fame</a>
                      <a class="navbar__link" href="#"><i class="icon icon-bill"></i>Performance</a>
                      <a class="navbar__link" href="#"><i class="icon icon-rebates"></i>Rebates</a>
                      <a class="navbar__link" href="#"><i class="icon icon-widgets"></i>Widgets</a>
-                  </div>
-                  <div class="navbar-trader__create">
-                     <button type="button" class="btn btn-primary btn-create">CREATE ACCOUNT</button>
+                    <div class="navbar-trader__create">
+                       <button type="button" class="btn btn-primary btn-create">CREATE ACCOUNT</button>
+                    </div>
                   </div>
                </div>
             </aside>
@@ -202,14 +152,14 @@
             </div>
          </div>
       </div>
-   </div>-->
-<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-<script>
-$("#menu-toggle").click(function(e) {
-  e.preventDefault();
-  $("#wrapper").toggleClass("toggled");
-});
-</script>
+   </div>
+  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script>
+    /*$(".js-btn-trader").click(function(e) {
+      e.preventDefault();
+      $(".glyphicon-remove").toggleClass("hidden");
+    });*/
+    </script>
 </body>
 </html>
