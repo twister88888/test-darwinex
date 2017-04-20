@@ -5,3 +5,5 @@
 - revisar tamaño del número de las notificaciones
 - añadir .news__expand
 - centrar flechas
+- fondo del icono del folder
+- color blanco número al lado del búho
