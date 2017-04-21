@@ -1,8 +1,15 @@
 .news {
+  border-bottom: 1px solid #505050;
   display: block;
-  padding: 0 px-rem(100) px-rem(30) px-rem(105);
+  padding: 0 px-rem(90) px-rem(10) px-rem(95);
+  @include respond-max($screen-sm) {
+    padding: 0 px-rem(10) px-rem(5) px-rem(10);
+  }
 }
 
 .news__item {
   width: 46%;
+  @include respond-max($screen-sm) {
+    width: 76%;
+  }
 }

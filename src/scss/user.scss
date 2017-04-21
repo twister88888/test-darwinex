@@ -1,6 +1,9 @@
 .user {
   display: block;
-  padding: px-rem(80) px-rem(100) px-rem(30) px-rem(100);
+  padding: px-rem(80) px-rem(90) px-rem(30) px-rem(90);
+  @include respond-max($screen-sm) {
+    padding: px-rem(50) px-rem(10) px-rem(30) px-rem(10);
+  }
 }
 
 .user__icon {
