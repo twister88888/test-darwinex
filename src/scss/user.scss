@@ -1,6 +1,6 @@
 .user {
   display: flex;
-  padding: px-rem(80) px-rem(90) px-rem(30) px-rem(90);
+  padding: px-rem(45) px-rem(90) px-rem(30) px-rem(10);
   align-items: center;
   @include respond-max($screen-sm) {
     padding: px-rem(50) px-rem(10) px-rem(30) px-rem(10);

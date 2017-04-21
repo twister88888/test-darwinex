@@ -1,4 +1,4 @@
-.btn {
+.btn2 {
    /*display: block;*/
    padding: .75rem 1.25rem;
    text-transform: uppercase;
@@ -41,11 +41,40 @@
 }
 
 .btn-pagination {
-  color: #505050;
+  background-color: transparent;
+  color: #D8D8D8;
   border: 1px solid #505050;
   border-radius: 50%;
-  line-height: px-rem(6);
-  font-size: 1.3rem;
-  height: 22px;
-  width: 22px;
+  font-size: .8rem;
+  padding: px-rem(8) px-rem(10);
+  &:hover {
+    border: none;
+    color: #D8D8D8;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.btn-view {
+  color: #6C6C6C;
+  font-size: px-rem(27);
+  &.active {
+    background-color: #505050;
+    border-radius: 0;
+    color: #00C9FF;
+    box-shadow: none;
+    &:hover {
+      color: #00C9FF;
+    }
+  }
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-list {
+  padding: px-rem(19.65) px-rem(32) px-rem(19.65) px-rem(15);
+}
+
+.btn-grid {
+  padding: px-rem(19.65) px-rem(24.44);
 }

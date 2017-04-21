@@ -1,4 +1,7 @@
 - navbar con las clases de bootstrap
 - añadir .news__expand
-- centrar flechas
-- color blanco número al lado del búho
+- cruceta en collapse navbar
+- font-size en general
+- switch portfolio
+- order
+- compatibilidad con navegadores

@@ -1,9 +1,9 @@
 .news {
   border-bottom: 1px solid #505050;
   display: block;
-  padding: 0 px-rem(90) px-rem(10) px-rem(95);
+  padding: 0 px-rem(90) px-rem(7) px-rem(15);
   @include respond-max($screen-sm) {
-    padding: 0 px-rem(10) px-rem(5) px-rem(10);
+    padding: 0 px-rem(10) px-rem(2) px-rem(10);
   }
 }
 

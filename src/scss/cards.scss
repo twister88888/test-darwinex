@@ -71,6 +71,10 @@
   justify-content: space-between;
   padding: px-rem(20) px-rem(15);
   width: 100%;
+  u {
+    color: $white;
+    text-decoration: none;
+  }
 }
 
 .card__detail-item--white { color: $white; }
