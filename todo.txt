@@ -1,9 +1,5 @@
-- añadir open sans archivo fonts
-- position del menú cuando está el inspector
 - navbar con las clases de bootstrap
 - bajar el .user__detail
-- revisar tamaño del número de las notificaciones
 - añadir .news__expand
 - centrar flechas
-- fondo del icono del folder
 - color blanco número al lado del búho

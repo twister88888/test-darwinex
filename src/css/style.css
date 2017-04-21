@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -144,6 +145,10 @@ table {
   content: '\e80b'; }
 
 /* '' */
+.icon-folder:before {
+  content: '\e816'; }
+
+/* '' */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6128,6 +6133,7 @@ header {
   background-color: #505050;
   border-radius: 3px;
   color: #00C9FF;
+  font-size: 1.1rem;
   margin-left: 0.1875rem;
   padding: 0 0.3125rem; }
 
@@ -6229,9 +6235,6 @@ header {
     background-color: #AAFF00;
     color: #272727; }
 
-.card__folder {
-  color: #fff; }
-
 .card__footer {
   display: flex;
   justify-content: space-between;
@@ -6258,5 +6261,10 @@ header {
 
 .card__detail-item--red {
   color: #FF4141; }
+
+.icon-folder {
+  cursor: pointer; }
+  .icon-folder:active {
+    color: #00C9FF; }
 
 /*# sourceMappingURL=style.css.map */

@@ -52,10 +52,6 @@
   }
 }
 
-.card__folder {
-  color: $white;
-}
-
 .card__footer {
   display: flex;
   justify-content: space-between;
@@ -80,3 +76,10 @@
 .card__detail-item--white { color: $white; }
 .card__detail-item--green { color: #AAFF00; }
 .card__detail-item--red { color: #FF4141; }
+
+.icon-folder {
+  cursor: pointer;
+  &:active {
+    color: #00C9FF;
+  }
+}
