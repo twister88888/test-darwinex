@@ -6105,8 +6105,9 @@ header {
   width: 22px; }
 
 .user {
-  display: block;
-  padding: 5rem 5.625rem 1.875rem 5.625rem; }
+  display: flex;
+  padding: 5rem 5.625rem 1.875rem 5.625rem;
+  align-items: center; }
   @media screen and (max-width: 768px) {
     .user {
       padding: 3.125rem 0.625rem 1.875rem 0.625rem; } }

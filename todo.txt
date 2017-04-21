@@ -1,5 +1,4 @@
 - navbar con las clases de bootstrap
-- bajar el .user__detail
 - añadir .news__expand
 - centrar flechas
 - color blanco número al lado del búho
