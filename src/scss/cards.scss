@@ -1,13 +1,15 @@
 .result-items {
   display: flex;
+  justify-content: space-between;
   margin-bottom: px-rem(120);
+  padding: 0 px-rem(10);
   width: 100%;
 }
 
 .card {
   background-color: #2D2D2D;
-  margin-left: px-rem(13);
-  width: px-rem(596);
+  margin: 0 px-rem(8);
+  width: 100%;
 }
 
 .card__header {

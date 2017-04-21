@@ -6168,13 +6168,15 @@ header {
 */
 .result-items {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 7.5rem;
+  padding: 0 0.625rem;
   width: 100%; }
 
 .card {
   background-color: #2D2D2D;
-  margin-left: 0.8125rem;
-  width: 37.25rem; }
+  margin: 0 0.5rem;
+  width: 100%; }
 
 .card__header {
   display: flex;
