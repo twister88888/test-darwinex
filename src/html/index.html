@@ -11,7 +11,13 @@
   <header class="header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 nopadding">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <h1 class="logo">
             <a href="#" title="Darwinex">
               <img src="../img/logo-darwinex.svg" alt="Darwinex" class="logo__img" />
@@ -22,9 +28,9 @@
     </div>
   </header>
   <div class="main">
-    <aside class="sidebar-navbar" role="sidebar">
+    <aside class="sidebar-navbar collapse out" role="sidebar" id="navbar">
       <div class="navbar-primary">
-        <span class="navbar-primary__title">Principal</span>
+        <span class="navbar-primary__title"><i class="icon icon-dots">Principal</i></span>
         <div class="navbar-primary__list">
           <a class="btn-icon navbar__link" href="#"><i class="icon icon-compass"></i>Explorar</a>
           <a class="btn-icon navbar__link" href="#"><i class="icon icon-circle"></i>All Darwins</a>

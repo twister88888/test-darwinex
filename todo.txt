@@ -3,7 +3,8 @@
 - cruceta en collapse navbar
 - font-size en general
 - switch portfolio
-- order
+- desplegable order
+- desplegable notifications
 - compatibilidad con navegadores
 - linter css
 - media queries al final

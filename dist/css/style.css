@@ -121,6 +121,10 @@ table {
   content: '\e803'; }
 
 /* '' */
+.icon-dots:before {
+  content: '\e804'; }
+
+/* '' */
 .icon-medal:before {
   content: '\e805'; }
 
@@ -5982,10 +5986,15 @@ header {
   top: 0;
   width: 100%; }
 
+.navbar-toggle {
+  float: left; }
+  .navbar-toggle .icon-bar {
+    background-color: #fff; }
+
 .logo {
   height: 5rem;
   margin: 0; }
-  @media screen and (max-width: 768px) {
+  @media (min-width: 768px) {
     .logo {
       text-align: center; } }
 
@@ -6000,6 +6009,14 @@ header {
   padding: 0 0.625rem;
   width: calc(100% - 188.13px); }
 
+@media (min-width: 990px) {
+  .nopadding {
+    padding: 0; } }
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: block; } }
+
 .sidebar-navbar {
   background-color: #2d2d2d;
   display: inline-block;
@@ -6009,7 +6026,11 @@ header {
   position: fixed;
   top: 5rem;
   vertical-align: top;
-  width: 18.8125rem; }
+  width: 18.8125rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
   .sidebar-navbar .icon {
     display: inline-block;
     font-size: 12px;

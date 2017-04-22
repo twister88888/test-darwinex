@@ -19,10 +19,17 @@ header {
   width: 100%;
 }
 
+.navbar-toggle {
+  float:left;
+  .icon-bar {
+    background-color: $white;
+  }
+}
+
 .logo {
   height: 5rem;
   margin: 0;
-  @include respond-max($screen-sm) {
+  @media (min-width: 768px) {
     text-align: center;
   }
 }
@@ -38,4 +45,17 @@ header {
   margin-top: px-rem(72);
   padding: 0 px-rem(10);
   width: calc(100% - 188.13px);
+}
+
+.nopadding {
+  @media (min-width: 990px) {
+    padding: 0;
+  }
+}
+
+
+.navbar-toggle {
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
