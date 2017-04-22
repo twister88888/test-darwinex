@@ -9,12 +9,22 @@
   background-color: #2D2D2D;
   margin: 0 px-rem(8);
   width: 100%;
+  .icon-circle {
+    font-size: px-rem(25);
+  }
+  .icon-folder {
+    cursor: pointer;
+    font-size: px-rem(25);
+    &:active {
+      color: #00C9FF;
+    }
+  }
 }
 
 .card__header {
   display: flex;
   justify-content: space-between;
-  padding: px-rem(10);
+  padding: px-rem(15) px-rem(10) px-rem(10);
 }
 
 .card__graph {
@@ -29,10 +39,6 @@
 .card__number {
   color: #979797;
   margin-left: px-rem(4);
-}
-
-.icon-circle--pink {
-  color: #D267C6;
 }
 
 .card__trade {
@@ -55,12 +61,12 @@
 .card__footer {
   display: flex;
   justify-content: space-between;
-  padding: px-rem(15);
+  padding: px-rem(10);
 }
 
 .card__detail {
   color: #ADAFB2;
-  padding: px-rem(10) 0;
+  padding: 0 0 px-rem(10);
   text-transform: uppercase;
 }
 
@@ -81,9 +87,6 @@
 .card__detail-item--green { color: #AAFF00; }
 .card__detail-item--red { color: #FF4141; }
 
-.icon-folder {
-  cursor: pointer;
-  &:active {
-    color: #00C9FF;
-  }
+.icon-circle--pink {
+  color: #D267C6;
 }

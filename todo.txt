@@ -8,3 +8,4 @@
 - linter css
 - media queries al final
 - linter html
+- sacar el svg del icono del hexágono, del círculo rosa y los 6 puntitos
