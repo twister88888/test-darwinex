@@ -5,3 +5,6 @@
 - switch portfolio
 - order
 - compatibilidad con navegadores
+- linter css
+- media queries al final
+- linter html
