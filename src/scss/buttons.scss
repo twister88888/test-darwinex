@@ -1,7 +1,8 @@
-.btn2 {
-   /*display: block;*/
-   padding: .75rem 1.25rem;
-   text-transform: uppercase;
+.btn {
+  &:active, &:focus {
+    box-shadow: none;
+    outline: none !important;
+  }
 }
 
 .btn-primary {
@@ -22,10 +23,17 @@
       background-color: #3293be;
       color: $white;
    }
-   span {
+   i {
+      display: none;
       float: right;
+      top: px-rem(5);
+   }
+   &[aria-expanded="true"] {
+     i { display: inline-block; }
    }
 }
+
+
 
 .btn-create {
    background-color: $white;

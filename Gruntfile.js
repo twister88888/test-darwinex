@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
   'use strict'
-  //Project configuration.
+  /* Project configuration. */
   require('load-grunt-tasks')(grunt)
 
   grunt.initConfig({
@@ -11,7 +11,7 @@ module.exports = function (grunt) {
         tasks: ['sass', 'copy']
       }
     },
-    //Compila archivos sass
+    /* Compila archivos sass */
     sass: {
       options: {
         sourceMap: true,
@@ -23,27 +23,28 @@ module.exports = function (grunt) {
         }
       }
     },
-    /*// Unifica y minifica archivos .js
+    /* Unifica y minifica archivos .js
     uglify: {
       build: {
         src: ['src/static/js/*.js'],
         dest: 'public/js/script.min.js'
       }
-   },*/
+   }, */
     // Copia archivos y carpetas
     copy: {
-      /*html: {
+      /* html: {
         cwd: 'src/html',
         src: ['*.html'],
         dest: 'dist/',
         expand: true
-     },*/
+     }, */
       css: {
         cwd: 'src/css',
         src: ['*.css'],
         dest: 'dist/css',
         expand: true
-     }/*,
+      }
+     /* ,
       js: {
        cwd: 'src/js',
        src: ['*.js'],
@@ -55,7 +56,7 @@ module.exports = function (grunt) {
        src: ['*'],
        dest: 'dist/img',
        expand: true
-    }*/
+    } */
 
     },
     // Elimina archivos y carpetas

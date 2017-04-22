@@ -15,6 +15,10 @@
     margin-right: 6px;
     min-width: 2.182rem;
     text-align: center;
+    &.icon-bill {
+      text-align: left;
+      font-size: 10px;
+    }
   }
 }
 
@@ -23,6 +27,8 @@
 }
 
 .navbar-primary__title {
+  background-color: #373737;
+  color: #B6B6B6;
   display: block;
   letter-spacing: .2rem;
   padding: 1.1rem 1.25rem 1.1rem 1.636rem;
