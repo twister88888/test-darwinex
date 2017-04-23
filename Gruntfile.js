@@ -55,6 +55,12 @@ copy: {
     src: ['*'],
     dest: 'dist/img',
     expand: true
+  },
+  fonts: {
+    cwd: 'src/fonts',
+    src: ['*'],
+    dest: 'dist/fonts',
+    expand: true
   }
 
 },
