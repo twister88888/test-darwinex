@@ -6004,13 +6004,15 @@ header {
 
 .main-column {
   background-color: #202020;
-  float: right;
   margin-top: 5rem;
   padding: 0 0.625rem;
   transition: all 0.15s linear;
-  width: calc(100% - 188.13px); }
+  left: 188px;
+  position: fixed;
+  width: calc(100% - 188px); }
   @media (max-width: 768px) {
     .main-column {
+      left: 0;
       width: 100%; } }
 
 @media (max-width: 768px) {
