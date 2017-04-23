@@ -1,11 +1,7 @@
-All
+- navbar con las clases de bootstrap
 - añadir .news__expand
 - switch portfolio
-- desplegable order
-- descargar cross.svg
-- corregir mobile
-- transiciones
-- desplegable notifications
+- position absolute notifciaciones con el menú
 - compatibilidad con navegadores
 - linter css
 - media queries al final

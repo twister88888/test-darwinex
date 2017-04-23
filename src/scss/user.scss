@@ -43,15 +43,10 @@
 }
 
 .user__dropdown {
-  background-color: $white;
-  border-radius: 4px;
-  color: #4A4A4A;
-  font-size: 12px;
   left: 120px;
   margin-top: px-rem(16);
   padding-bottom: px-rem(12);
   padding-top: px-rem(12);
-  position: absolute;
   width: px-rem(230);
 }
 
@@ -71,15 +66,4 @@
   margin-top: px-rem(10);
   padding-top: px-rem(19);
   padding-bottom: px-rem(8);
-}
-
-.dropdown-menu:after {
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid #ffffff;
-  border-left: 6px solid transparent;
-  display: inline-block;
-  content: '';
-  left: 10px;
-  position: absolute;
-  top: -6px;
 }

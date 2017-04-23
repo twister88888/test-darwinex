@@ -17,6 +17,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 900;
 }
 
 .navbar-toggle {
@@ -80,9 +81,26 @@ header {
   }
 }
 
-
 .navbar-toggle {
   @media (max-width: 768px) {
     display: block;
+  }
+}
+
+.dropdown-menu {
+  background-color: $white;
+  border-radius: 4px;
+  color: #4A4A4A;
+  font-size: 12px;
+  position: absolute;
+  &:after {
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px solid transparent;
+    display: inline-block;
+    content: '';
+    left: 10px;
+    position: absolute;
+    top: -6px;
   }
 }
