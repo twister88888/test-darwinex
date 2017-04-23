@@ -148,7 +148,7 @@
                   <div>Drawdown</div>
                   <div>D-Score</div>
                 </div>
-                <div class="result-items result-items--list">
+                <div class="result-items">
                   <div class="card">
                     <div class="card__header">
                       <div class="card__name">
@@ -281,13 +281,13 @@
     });
     $(".btn-list").click(function(e) {
         e.preventDefault();
-        $(".result-items").addClass("result-items--list");
+        $(".result").addClass("result--list");
         $(".btn-grid").removeClass("btn-view--active");
         $(".btn-list").addClass("btn-view--active");
     });
     $(".btn-grid").click(function(e) {
         e.preventDefault();
-        $(".result-items").removeClass("result-items--list");
+        $(".result").removeClass("result--list");
         $(".btn-list").removeClass("btn-view--active");
         $(".btn-grid").addClass("btn-view--active");
     });
