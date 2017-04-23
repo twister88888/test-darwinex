@@ -5,6 +5,54 @@
   width: 100%;
 }
 
+.result-items--list {
+  &.result-items{
+    display: block;
+  }
+
+  .card {
+    background-color: transparent;
+    border: 1px solid grey;
+    border-width: 1px 0 1px 0;
+    display: block;
+  }
+
+  .card__header {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 40%;
+  }
+
+  .card__detail {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 58%;
+  }
+
+  .card__detail-item {
+    border: 0;
+    display: inline-block;
+    width: auto;
+  }
+
+  .card__graph,
+  .card__text,
+  .card__footer{
+    display: none;
+  }
+}
+
+.result__header {
+  border: 1px solid grey;
+  border-width: 1px 0 0 0;
+  color: #979797;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-around;
+  padding: px-rem(20);
+  width: 100%;
+}
+
 .card {
   background-color: #2D2D2D;
   margin: 0 px-rem(8);
@@ -43,6 +91,7 @@
 
 .card__trade {
   color: #AAFF00;
+  margin-top: px-rem(5);
 }
 
 .card__button {

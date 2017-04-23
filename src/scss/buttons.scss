@@ -66,17 +66,18 @@
 .btn-view {
   color: #6C6C6C;
   font-size: px-rem(27);
-  &.active {
-    background-color: #505050;
-    border-radius: 0;
-    color: #00C9FF;
-    box-shadow: none;
-    &:hover {
-      color: #00C9FF;
-    }
-  }
   &:hover {
     color: $white;
+  }
+}
+
+.btn-view--active {
+  background-color: #505050;
+  border-radius: 0;
+  color: #00C9FF;
+  box-shadow: none;
+  &:hover {
+    color: #00C9FF;
   }
 }
 

@@ -11,3 +11,9 @@
   font-size: px-rem(20);
   width: 50%;
 }
+
+.pagination__arrow {
+  .result-items--list & {
+    display: none;
+  }
+}
