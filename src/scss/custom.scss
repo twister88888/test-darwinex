@@ -38,19 +38,39 @@ header {
   border: 0;
   vertical-align: middle;
 }
+.main {
+  margin-top: px-rem(80);
+  padding-left: 188px;
+  transition: all 0.4s ease 0s;
+  @media (max-width: 768px) {
+    padding-left: 0;
+  }
+}
+
+.main.active {
+  padding-left: 0;
+  .sidebar-navbar {
+    left: 0;
+    @media (max-width: 768px) {
+      left: 188px;
+      width: 188px;
+      transition: all 0.4s ease 0s;
+    }
+  }
+  @media (max-width: 768px) {
+    position: relative;
+    left: 188px;
+  }
+}
 
 .main-column {
   background-color: #202020;
-  margin-top: px-rem(80);
-  padding: 0 px-rem(10);
-  transition: all 0.15s linear;
-  left: 188px;
-  position: fixed;
-  width: calc(100% - 188px);
-  @media (max-width: 768px) {
-    left: 0;
-    width: 100%;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+  article {
+    padding: 0 px-rem(10);
   }
+
 }
 
 .nopadding {

@@ -8,8 +8,8 @@
 }
 
 .news__item {
-  width: 46%;
+  width: 52%;
   @include respond-max($screen-sm) {
-    width: 76%;
+    width: 64%;
   }
 }

@@ -6002,18 +6002,34 @@ header {
   border: 0;
   vertical-align: middle; }
 
+.main {
+  margin-top: 5rem;
+  padding-left: 188px;
+  transition: all 0.4s ease 0s; }
+  @media (max-width: 768px) {
+    .main {
+      padding-left: 0; } }
+
+.main.active {
+  padding-left: 0; }
+  .main.active .sidebar-navbar {
+    left: 0; }
+    @media (max-width: 768px) {
+      .main.active .sidebar-navbar {
+        left: 188px;
+        width: 188px;
+        transition: all 0.4s ease 0s; } }
+  @media (max-width: 768px) {
+    .main.active {
+      position: relative;
+      left: 188px; } }
+
 .main-column {
   background-color: #202020;
-  margin-top: 5rem;
-  padding: 0 0.625rem;
-  transition: all 0.15s linear;
-  left: 188px;
-  position: fixed;
-  width: calc(100% - 188px); }
-  @media (max-width: 768px) {
-    .main-column {
-      left: 0;
-      width: 100%; } }
+  transition: all 0.4s ease 0s;
+  width: 100%; }
+  .main-column article {
+    padding: 0 0.625rem; }
 
 @media (max-width: 768px) {
   .nopadding {
@@ -6025,19 +6041,15 @@ header {
 
 .sidebar-navbar {
   background-color: #2d2d2d;
-  display: inline-block;
-  font-size: 11px;
+  font-size: 10px;
   height: 100%;
-  overflow: auto;
+  left: 188px;
+  margin-left: -188px;
+  overflow-y: auto;
   position: fixed;
-  top: 5rem;
-  vertical-align: top;
+  transition: all 0.4s ease 0s;
   width: 18.8125rem;
-  transition: transform 0.15s linear;
-  /*transition: transform 1.15s easy;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);*/ }
+  z-index: 1000; }
   .sidebar-navbar .icon {
     display: inline-block;
     font-size: 12px;
@@ -6049,10 +6061,7 @@ header {
       font-size: 10px; }
   @media (max-width: 768px) {
     .sidebar-navbar {
-      /*  display: none; */
-      -webkit-transform: translateX(-18.8125rem);
-      -ms-transform: translateX(-18.8125rem);
-      transform: translateX(-18.8125rem); } }
+      left: 0; } }
 
 .navbar-primary {
   color: #adafb2; }
@@ -6061,6 +6070,7 @@ header {
   background-color: #373737;
   color: #B6B6B6;
   display: block;
+  font-size: 11px;
   letter-spacing: .2rem;
   padding: 1.1rem 1.25rem 1.1rem 1.636rem;
   text-transform: uppercase; }
@@ -6069,10 +6079,11 @@ header {
   color: #adafb2;
   display: block;
   padding: .6rem .8rem; }
-  .navbar__link:hover {
+  .navbar__link:hover, .navbar__link:focus {
     background-color: #202020;
     color: #fff;
     cursor: pointer;
+    outline: none !important;
     text-decoration: none; }
 
 .navbar-trader {
@@ -6088,7 +6099,7 @@ header {
 
 .navbar-trader__list .navbar__link {
   color: #fff; }
-  .navbar-trader__list .navbar__link:hover {
+  .navbar-trader__list .navbar__link:hover, .navbar-trader__list .navbar__link:focus {
     background-color: #3293be; }
 
 .navbar-trader__list--hidden {
@@ -6101,7 +6112,22 @@ header {
   text-align: center; }
 
 .navbar-toggle {
+  position: absolute;
   cursor: pointer; }
+
+.header.active .navbar-toggle--burguer {
+  display: none; }
+
+.navbar-toggle--cross .glyphicon {
+  color: #00B0FF;
+  font-size: 1.875rem;
+  font-weight: normal; }
+
+.header .navbar-toggle--cross {
+  display: none; }
+
+.header.active .navbar-toggle--cross {
+  display: block; }
 
 .btn:active, .btn:focus {
   box-shadow: none;
@@ -6118,6 +6144,7 @@ header {
 
 .btn-navbar-nobutton {
   background-color: inherit;
+  font-size: 12px;
   width: 100%; }
   .btn-navbar-nobutton:hover, .btn-navbar-nobutton:focus {
     background-color: #3293be;
@@ -6183,7 +6210,7 @@ header {
   background-color: #67D2C8;
   border-radius: 50%;
   display: inline-block;
-  font-size: 15px;
+  font-size: 14.3px;
   margin-right: 0.625rem;
   padding: 1.5rem; }
 
@@ -6192,6 +6219,7 @@ header {
 
 .user__name {
   color: #adafb2;
+  font-size: 12px;
   display: block; }
 
 .user__account {
@@ -6214,10 +6242,10 @@ header {
       padding: 0 0.625rem 0.125rem 0.625rem; } }
 
 .news__item {
-  width: 46%; }
+  width: 52%; }
   @media screen and (max-width: 768px) {
     .news__item {
-      width: 76%; } }
+      width: 64%; } }
 
 .nav {
   background-color: #373737;

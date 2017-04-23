@@ -1,18 +1,15 @@
 .sidebar-navbar {
   background-color: #2d2d2d;
-  display: inline-block;
-  font-size: 11px;
+  font-size: 10px;
   height: 100%;
-  overflow: auto;
+  left: 188px;
+  margin-left: -188px;
+  overflow-y: auto;
   position: fixed;
-  top: 5rem;
-  vertical-align: top;
+  //top: 5rem;
+  transition: all 0.4s ease 0s;
   width: px-rem(301);
-  transition: transform 0.15s linear;
-  /*transition: transform 1.15s easy;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);*/
+  z-index: 1000;
 
   .icon {
     display: inline-block;
@@ -26,13 +23,7 @@
     }
   }
   @media (max-width: 768px) {
-  /*  display: none; */
-    -webkit-transform: translateX(px-rem(-301));
-    -ms-transform: translateX(px-rem(-301));
-    transform: translateX(px-rem(-301));
-  }
-  @media (min-width: 768px) {
-
+    left: 0;
   }
 }
 
@@ -44,6 +35,7 @@
   background-color: #373737;
   color: #B6B6B6;
   display: block;
+  font-size: 11px;
   letter-spacing: .2rem;
   padding: 1.1rem 1.25rem 1.1rem 1.636rem;
   text-transform: uppercase;
@@ -53,10 +45,11 @@
   color: #adafb2;
   display: block;
   padding: .6rem .8rem;
-  &:hover {
+  &:hover, &:focus {
     background-color: #202020;
     color: #fff;
     cursor: pointer;
+    outline: none !important;
     text-decoration: none;
   }
 }
@@ -76,7 +69,7 @@
 .navbar-trader__list {
   .navbar__link {
     color: $white;
-    &:hover {
+    &:hover, &:focus {
       background-color: #3293be;
     }
   }
@@ -94,5 +87,29 @@
 }
 
 .navbar-toggle {
+  position: absolute;
   cursor: pointer;
+}
+
+.navbar-toggle--burguer {
+  .header.active & {
+    display: none;
+  }
+}
+
+.navbar-toggle--cross {
+  .glyphicon {
+    color: #00B0FF;
+    font-size: px-rem(30);
+    font-weight: normal;
+  }
+  .header & {
+    display: none;
+  }
+}
+
+.navbar-toggle--cross {
+  .header.active & {
+    display: block;
+  }
 }
