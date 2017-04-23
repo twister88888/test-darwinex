@@ -36,5 +36,50 @@
   color: #00C9FF;
   font-size: 1.1rem;
   margin-left: px-rem(3);
-  padding: 0 px-rem(5);
+  padding: 0 px-rem(3);
+  &:hover, &:focus {
+    color: #00C9FF;
+  }
+}
+
+.user__dropdown {
+  background-color: $white;
+  border-radius: 4px;
+  color: #4A4A4A;
+  font-size: 12px;
+  left: 120px;
+  margin-top: px-rem(16);
+  padding-bottom: px-rem(12);
+  padding-top: px-rem(12);
+  position: absolute;
+  width: px-rem(230);
+}
+
+.user__item {
+  display: flex;
+  justify-content: space-between;
+  padding: px-rem(8) px-rem(11);
+  .icon-owl {
+    color: #C0C0C0;
+  }
+}
+
+.user__item--bottom {
+  border: 1px solid #505050;
+  border-width: 1px 0 0 0;
+  font-size: 11px;
+  margin-top: px-rem(10);
+  padding-top: px-rem(19);
+  padding-bottom: px-rem(8);
+}
+
+.dropdown-menu:after {
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  display: inline-block;
+  content: '';
+  left: 10px;
+  position: absolute;
+  top: -6px;
 }

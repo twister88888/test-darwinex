@@ -1,6 +1,5 @@
 All
 - añadir .news__expand
-- font-size en general
 - switch portfolio
 - desplegable order
 - descargar cross.svg
@@ -12,6 +11,3 @@ All
 - media queries al final
 - linter html
 - sacar el svg del icono del hexágono, del círculo rosa y los 6 puntitos
-
-Tablet
-- centrar logo

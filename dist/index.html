@@ -66,14 +66,34 @@
               <span class="user__icon">AIS</span>
               <div class="user__detail">
                 <span class="user__name">Estrategianombre</span>
-                <span class="user__account">Nombre de Usuario <span class="user__notifications">+2</span></span>
+                <span class="user__account dropdown">Nombre de Usuario
+                  <button type="button" class="user__notifications btn dropdown-toggle"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">+2</button>
+                  <div class="user__dropdown dropdown-menu" aria-labelledby="dLabel">
+                    <div class="user__item">
+                      <div><i class="icon icon-circle icon-circle--orange"></i> LPO</div>
+                      <div><i class="icon icon-owl"></i> 98.9</div>
+                    </div>
+                    <div class="user__item">
+                      <div><i class="icon icon-circle icon-circle--purple"></i> ERQ</div>
+                      <div><i class="icon icon-owl"></i> 98.9</div>
+                    </div>
+                    <div class="user__item">
+                      <div><i class="icon icon-circle icon-circle--green"></i> IPH</div>
+                      <div><i class="icon icon-owl"></i> 98.9</div>
+                    </div>
+                    <div class="user__item user__item--bottom">
+                      + 5. Go to user profile
+                    </div>
+                  </div>
+                </span>
               </div>
             </div>
             <div class="news">
               <div class="news__item">
                 <p class="news__description">TSM is absolutely passionate about automated, systematic trading, and to drive system lorem ipsum dolor sit amet… </p>
               </div>
-              <!--<button class="news__expand" type="button"></button>-->
+              <button class="news__expand" type="button"></button>
             </div>
             <div class="nav">
               <div class="nav__item nav__view">
