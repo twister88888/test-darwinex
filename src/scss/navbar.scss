@@ -61,7 +61,7 @@
   padding: .6rem .8rem;
 
   &:hover, &:focus {
-    background-color: #202020;
+    background-color: $gray-dark;
     color: $white;
     cursor: pointer;
     outline: none !important;

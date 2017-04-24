@@ -3,7 +3,7 @@ body {
   font-family: $open-sans;
   @include font-size($large-font);
   line-height: 1.5;
-  background-color: $grey;
+  background-color: $gray;
 }
 
 a {
@@ -62,7 +62,7 @@ header {
 }
 
 .main-column {
-  background-color: #202020;
+  background-color: $gray-dark;
   height: 100%;
   transition: all 0.4s ease 0s;
   width: 100%;

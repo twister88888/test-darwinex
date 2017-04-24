@@ -19,7 +19,7 @@
   }
 
   .result__header {
-    border: 1px solid grey;
+    border: 1px solid $gray;
     border-width: 1px 0 0 0;
     color: #979797;
     display: flex;
@@ -31,7 +31,7 @@
 
   .card {
     background-color: transparent;
-    border: 1px solid grey;
+    border: 1px solid $gray;
     border-width: 1px 0 0 0;
     display: block;
     margin: 0;
@@ -134,7 +134,7 @@
 }
 
 .card__detail-item {
-  border: 1px solid #505050;
+  border: 1px solid $gray-lighter;
   border-width: 1px 0 0 0;
   display: flex;
   justify-content: space-between;
@@ -149,6 +149,6 @@
 
 .card__detail-item--white { color: $white; }
 
-.card__detail-item--green { color: #AAFF00; }
+.card__detail-item--green { color: $green; }
 
-.card__detail-item--red { color: #FF4141; }
+.card__detail-item--red { color: $red; }

@@ -5920,10 +5920,10 @@ body {
   font-size: 21px;
   font-size: 1.3125rem;
   line-height: 1.5;
-  background-color: #d3d3d3; }
+  background-color: gray; }
 
 a {
-  color: #fff; }
+  color: #FFF; }
 
 header {
   background-color: #000;
@@ -5937,7 +5937,7 @@ header {
 .navbar-toggle {
   float: left; }
   .navbar-toggle .icon-bar {
-    background-color: #fff; }
+    background-color: #FFF; }
 
 .logo {
   height: 5rem;
@@ -5981,7 +5981,7 @@ header {
     display: block; } }
 
 .dropdown-menu {
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 4px;
   color: #4A4A4A;
   font-size: 20px;
@@ -6055,7 +6055,7 @@ header {
   padding: .6rem .8rem; }
   .navbar__link:hover, .navbar__link:focus {
     background-color: #202020;
-    color: #fff;
+    color: #FFF;
     cursor: pointer;
     outline: none !important;
     text-decoration: none; }
@@ -6068,7 +6068,7 @@ header {
   transition: all 1s ease; }
 
 .navbar-trader__list .navbar__link {
-  color: #fff; }
+  color: #FFF; }
   .navbar-trader__list .navbar__link:hover, .navbar-trader__list .navbar__link:focus {
     background-color: #3293be; }
 
@@ -6109,7 +6109,7 @@ header {
   text-align: center; }
 
 .btn-secondary {
-  color: #fff;
+  color: #FFF;
   font-size: 20px;
   font-size: 1.25rem;
   text-align: left; }
@@ -6121,7 +6121,7 @@ header {
   width: 100%; }
   .btn-navbar-nobutton:hover, .btn-navbar-nobutton:focus {
     background-color: #3293be;
-    color: #fff; }
+    color: #FFF; }
   .btn-navbar-nobutton i {
     display: none;
     float: right;
@@ -6130,14 +6130,14 @@ header {
     display: inline-block; }
 
 .btn-create {
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 2.5454rem;
   color: #202020;
-  border-color: #fff;
+  border-color: #FFF;
   padding: 0.475rem 1.8363rem; }
   .btn-create:hover {
     background-color: #e6e6e6;
-    border-color: #fff;
+    border-color: #FFF;
     color: #202020; }
 
 .btn-pagination {
@@ -6156,7 +6156,7 @@ header {
   color: #6C6C6C;
   font-size: 1.6875rem; }
   .btn-view:hover {
-    color: #fff; }
+    color: #FFF; }
 
 .btn-view--active {
   background-color: #505050;
@@ -6233,7 +6233,7 @@ header {
     color: #C0C0C0; }
 
 .user__item--bottom {
-  border: 1px solid #505050;
+  border: 1px solid #202020;
   border-width: 1px 0 0 0;
   font-size: 18px;
   font-size: 1.125rem;
@@ -6272,7 +6272,7 @@ header {
   display: inline-block; }
 
 .nav__view {
-  border: 1px solid grey;
+  border: 1px solid gray;
   border-width: 0 1px 0 0; }
 
 .nav__switch {
@@ -6322,7 +6322,7 @@ header {
   padding-right: 1.1875rem; }
 
 .nav__order {
-  border: 1px solid grey;
+  border: 1px solid gray;
   border-width: 0 0 0 1px;
   float: right;
   padding: 1.55rem 1.5625rem; }
@@ -6391,7 +6391,7 @@ header {
   display: block !important; }
 
 .result--list .result__header {
-  border: 1px solid grey;
+  border: 1px solid gray;
   border-width: 1px 0 0 0;
   color: #979797;
   display: -webkit-box;
@@ -6406,7 +6406,7 @@ header {
 
 .result--list .card {
   background-color: transparent;
-  border: 1px solid grey;
+  border: 1px solid gray;
   border-width: 1px 0 0 0;
   display: block;
   margin: 0; }
@@ -6476,7 +6476,7 @@ header {
 .card__button {
   border: 1px solid #AAFF00;
   border-radius: 10px;
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
   margin-left: 0.3125rem;
   padding: 0.125rem 0.9375rem; }
@@ -6510,11 +6510,11 @@ header {
   padding: 1.25rem 0.9375rem;
   width: 100%; }
   .card__detail-item u {
-    color: #fff;
+    color: #FFF;
     text-decoration: none; }
 
 .card__detail-item--white {
-  color: #fff; }
+  color: #FFF; }
 
 .card__detail-item--green {
   color: #AAFF00; }

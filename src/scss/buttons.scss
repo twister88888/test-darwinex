@@ -40,20 +40,20 @@
 .btn-create {
    background-color: $white;
    border-radius: 2.5454rem;
-   color: #202020;
+   color: $gray-dark;
    border-color: $white;
    padding: 0.475rem 1.8363rem;
 
    &:hover {
       background-color: #e6e6e6;
       border-color: $white;
-      color: #202020;
+      color: $gray-dark;
    }
 }
 
 .btn-pagination {
   background-color: transparent;
-  border: 1px solid #505050;
+  border: 1px solid $gray-lighter;
   border-radius: 50%;
   color: #D8D8D8;
   font-size: .8rem;
@@ -76,7 +76,7 @@
 }
 
 .btn-view--active {
-  background-color: #505050;
+  background-color: $gray-lighter;
   border-radius: 0;
   color: #00C9FF;
   box-shadow: none;

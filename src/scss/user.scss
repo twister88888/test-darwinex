@@ -32,7 +32,7 @@
 }
 
 .user__notifications {
-  background-color: #505050;
+  background-color: $gray-lighter;
   border-radius: 3px;
   color: #00C9FF;
   font-size: 1.1rem;
@@ -63,7 +63,7 @@
 }
 
 .user__item--bottom {
-  border: 1px solid #505050;
+  border: 1px solid $gray-dark;
   border-width: 1px 0 0 0;
   @include font-size($small-font);
   margin-top: px-rem(10);
