@@ -39,28 +39,21 @@ header {
   border: 0;
   vertical-align: middle;
 }
+
 .main {
   margin-top: px-rem(80);
   padding-left: 188px;
-  transition: all 0.4s ease 0s;
+  transition: all 0.5s ease;
   @media (max-width: 768px) {
     padding-left: 0;
   }
 }
 
 .main.active {
-  padding-left: 0;
+  padding-left: 188px;
   .sidebar-navbar {
-    left: 0;
-    @media (max-width: 768px) {
-      left: 188px;
-      width: 188px;
-      transition: all 0.4s ease 0s;
-    }
-  }
-  @media (max-width: 768px) {
-    position: relative;
     left: 188px;
+    width: 188px;
   }
 }
 

@@ -6018,24 +6018,16 @@ header {
 .main {
   margin-top: 5rem;
   padding-left: 188px;
-  transition: all 0.4s ease 0s; }
+  transition: all 0.5s ease; }
   @media (max-width: 768px) {
     .main {
       padding-left: 0; } }
 
 .main.active {
-  padding-left: 0; }
+  padding-left: 188px; }
   .main.active .sidebar-navbar {
-    left: 0; }
-    @media (max-width: 768px) {
-      .main.active .sidebar-navbar {
-        left: 188px;
-        width: 188px;
-        transition: all 0.4s ease 0s; } }
-  @media (max-width: 768px) {
-    .main.active {
-      position: relative;
-      left: 188px; } }
+    left: 188px;
+    width: 188px; }
 
 .main-column {
   background-color: #202020;
@@ -6069,6 +6061,17 @@ header {
     position: absolute;
     top: -6px; }
 
+.navbar-wrapper {
+  background: #1a1a1a;
+  height: 100%;
+  left: 220px;
+  margin-left: -220px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+  width: 0;
+  z-index: 1000; }
+
 .sidebar-navbar {
   background-color: #2d2d2d;
   font-size: 10px;
@@ -6076,8 +6079,9 @@ header {
   left: 188px;
   margin-left: -188px;
   overflow-y: auto;
+  padding: 0;
   position: fixed;
-  transition: all 0.4s ease 0s;
+  transition: all 0.5s ease;
   width: 18.8125rem;
   z-index: 1000; }
   .sidebar-navbar .icon {

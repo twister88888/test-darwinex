@@ -12,7 +12,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 nopadding">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false" aria-controls="navbar">
             <div class="navbar-toggle--burguer">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -33,27 +33,29 @@
     </div>
   </header>
   <div class="main">
-    <aside class="sidebar-navbar" role="sidebar" id="navbar">
-      <div class="navbar-primary">
-        <span class="navbar-primary__title">Principal</span>
-        <div class="navbar-primary__list">
-          <a class="btn-icon navbar__link" href="#"><i class="icon icon-compass"></i>Explorar</a>
-          <a class="btn-icon navbar__link" href="#"><i class="icon icon-circle"></i>All Darwins</a>
-          <a class="btn-icon navbar__link" href="#"><i class="icon icon-trophy"></i>Darwinia</a>
+    <aside class="navbar-wrapper" role="sidebar">
+      <div class="sidebar-navbar">
+        <div class="navbar-primary">
+          <span class="navbar-primary__title">Principal</span>
+          <div class="navbar-primary__list">
+            <a class="btn-icon navbar__link" href="#"><i class="icon icon-compass"></i>Explorar</a>
+            <a class="btn-icon navbar__link" href="#"><i class="icon icon-circle"></i>All Darwins</a>
+            <a class="btn-icon navbar__link" href="#"><i class="icon icon-trophy"></i>Darwinia</a>
+          </div>
         </div>
-      </div>
-      <div class="navbar-trader">
-        <button role="button" data-toggle="collapse" data-target="#traderList" class="btn btn-secondary btn-navbar-nobutton">
-          Are you trader? <i class="glyphicon glyphicon-remove"></i>
-        </button>
-        <div class="navbar-trader__list collapse" id="traderList">
-          <a class="btn-icon navbar__link" href="#"><i class="icon icon-trophy"></i>Darwinia</a>
-          <a class="btn-icon navbar__link" href="#"><i class="icon icon-medal"></i>Hall of Fame</a>
-          <a class="btn-icon navbar__link" href="#"><i class="icon icon-bill"></i>Performance</a>
-          <a class="btn-icon navbar__link" href="#"><i class="icon icon-rebates"></i>Rebates</a>
-          <a class="btn-icon navbar__link" href="#"><i class="icon icon-widgets"></i>Widgets</a>
-          <div class="navbar-trader__create">
-            <button type="button" class="btn btn-primary btn-create">CREATE ACCOUNT</button>
+        <div class="navbar-trader">
+          <button role="button" data-toggle="collapse" data-target="#traderList" class="btn btn-secondary btn-navbar-nobutton">
+            Are you trader? <i class="glyphicon glyphicon-remove"></i>
+          </button>
+          <div class="navbar-trader__list collapse" id="traderList">
+            <a class="btn-icon navbar__link" href="#"><i class="icon icon-trophy"></i>Darwinia</a>
+            <a class="btn-icon navbar__link" href="#"><i class="icon icon-medal"></i>Hall of Fame</a>
+            <a class="btn-icon navbar__link" href="#"><i class="icon icon-bill"></i>Performance</a>
+            <a class="btn-icon navbar__link" href="#"><i class="icon icon-rebates"></i>Rebates</a>
+            <a class="btn-icon navbar__link" href="#"><i class="icon icon-widgets"></i>Widgets</a>
+            <div class="navbar-trader__create">
+              <button type="button" class="btn btn-primary btn-create">CREATE ACCOUNT</button>
+            </div>
           </div>
         </div>
       </div>
