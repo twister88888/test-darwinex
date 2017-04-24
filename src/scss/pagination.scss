@@ -8,7 +8,7 @@
 .pagination__result {
   display: inline-block;
   float: left;
-  font-size: px-rem(20);
+  @include font-size($medium-font);
   width: 50%;
 }
 

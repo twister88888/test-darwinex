@@ -2,6 +2,7 @@
   border-bottom: 1px solid #505050;
   display: block;
   padding: 0 px-rem(90) px-rem(7) px-rem(15);
+
   @include respond-max($screen-sm) {
     padding: 0 px-rem(10) px-rem(2) px-rem(10);
   }
@@ -10,19 +11,16 @@
 .news__item {
   position: relative;
   width: 52%;
+
   @include respond-max($screen-sm) {
     width: 64%;
   }
-}
-
-.news__description {
-
 }
 
 .news__arrow {
   cursor: pointer;
   font-size: px-rem(18);
   position: absolute;
-  right: -.5rem;
+  right: -3rem;
   top: .5rem;
 }

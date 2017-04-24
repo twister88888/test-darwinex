@@ -2,6 +2,7 @@
   display: flex;
   padding: px-rem(45) px-rem(90) px-rem(30) px-rem(10);
   align-items: center;
+
   @include respond-max($screen-sm) {
     padding: px-rem(50) px-rem(10) px-rem(30) px-rem(10);
   }
@@ -22,7 +23,7 @@
 
 .user__name{
   color: #adafb2;
-  font-size: 12px;
+  @include font-size($medium-font);
   display: block;
 }
 
@@ -37,6 +38,7 @@
   font-size: 1.1rem;
   margin-left: px-rem(3);
   padding: 0 px-rem(3);
+
   &:hover, &:focus {
     color: #00C9FF;
   }
@@ -54,6 +56,7 @@
   display: flex;
   justify-content: space-between;
   padding: px-rem(8) px-rem(11);
+
   .icon-owl {
     color: #C0C0C0;
   }
@@ -62,7 +65,7 @@
 .user__item--bottom {
   border: 1px solid #505050;
   border-width: 1px 0 0 0;
-  font-size: 11px;
+  @include font-size($small-font);
   margin-top: px-rem(10);
   padding-top: px-rem(19);
   padding-bottom: px-rem(8);

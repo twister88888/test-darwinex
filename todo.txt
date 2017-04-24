@@ -1,9 +1,3 @@
-- navbar con las clases de bootstrap
-- añadir .news__expand
-- compatibilidad con navegadores
-- sacar el svg del icono del hexágono, del círculo rosa y los 6 puntitos
-
-
 EXTRA
 - linter html
 - linter css

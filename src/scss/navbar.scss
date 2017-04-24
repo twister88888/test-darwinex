@@ -12,7 +12,7 @@
 
 .sidebar-navbar {
   background-color: #2d2d2d;
-  font-size: 10px;
+  @include font-size($small-font);
   height: 100%;
   left: 188px;
   margin-left: -188px;
@@ -25,16 +25,18 @@
 
   .icon {
     display: inline-block;
-    font-size: 12px;
+    @include font-size($medium-font);
     margin-right: 6px;
     min-width: 2.182rem;
     text-align: center;
+
     &.icon-bill {
       text-align: left;
-      font-size: 10px;
+      @include font-size($small-font - 1);
     }
   }
-  @media (max-width: 768px) {
+
+  @include respond-max($screen-sm) {
     left: 0;
   }
 }
@@ -47,7 +49,7 @@
   background-color: #373737;
   color: #B6B6B6;
   display: block;
-  font-size: 11px;
+  @include font-size($small-font);
   letter-spacing: .2rem;
   padding: 1.1rem 1.25rem 1.1rem 1.636rem;
   text-transform: uppercase;
@@ -57,9 +59,10 @@
   color: #adafb2;
   display: block;
   padding: .6rem .8rem;
+
   &:hover, &:focus {
     background-color: #202020;
-    color: #fff;
+    color: $white;
     cursor: pointer;
     outline: none !important;
     text-decoration: none;
@@ -71,16 +74,13 @@
   bottom: 0;
   position: fixed;
   width: px-rem(301);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
   transition: all 1s ease;
 }
 
 .navbar-trader__list {
   .navbar__link {
     color: $white;
+
     &:hover, &:focus {
       background-color: #3293be;
     }

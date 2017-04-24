@@ -6,35 +6,36 @@
 }
 
 .btn-primary {
-   font-size: 13px;
+   @include font-size($large-font);
    text-align: center;
 }
 
 .btn-secondary {
    color: $white;
-   font-size: 12px;
+   @include font-size($medium-font);
    text-align: left;
 }
 
 .btn-navbar-nobutton {
    background-color: inherit;
-   font-size: 12px;
+   @include font-size($medium-font);
    width: 100%;
+
    &:hover, &:focus {
       background-color: #3293be;
       color: $white;
    }
+
    i {
       display: none;
       float: right;
       top: px-rem(5);
    }
+
    &[aria-expanded="true"] {
      i { display: inline-block; }
    }
 }
-
-
 
 .btn-create {
    background-color: $white;
@@ -42,6 +43,7 @@
    color: #202020;
    border-color: $white;
    padding: 0.475rem 1.8363rem;
+
    &:hover {
       background-color: #e6e6e6;
       border-color: $white;
@@ -51,11 +53,12 @@
 
 .btn-pagination {
   background-color: transparent;
-  color: #D8D8D8;
   border: 1px solid #505050;
   border-radius: 50%;
+  color: #D8D8D8;
   font-size: .8rem;
   padding: px-rem(8) px-rem(10);
+
   &:hover {
     border: none;
     color: #D8D8D8;
@@ -66,6 +69,7 @@
 .btn-view {
   color: #6C6C6C;
   font-size: px-rem(27);
+
   &:hover {
     color: $white;
   }
@@ -76,15 +80,12 @@
   border-radius: 0;
   color: #00C9FF;
   box-shadow: none;
+
   &:hover {
     color: #00C9FF;
   }
 }
 
-.btn-list {
-  padding: px-rem(19.65) px-rem(32) px-rem(19.65) px-rem(15);
-}
+.btn-list { padding: px-rem(19.65) px-rem(32) px-rem(19.65) px-rem(15); }
 
-.btn-grid {
-  padding: px-rem(19.65) px-rem(24.44);
-}
+.btn-grid { padding: px-rem(19.65) px-rem(24.44); }

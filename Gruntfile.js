@@ -8,14 +8,14 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: ['src/scss/*.scss'],
-        tasks: ['sass', 'copy']
+        tasks: ['sass', 'autoprefixer', 'copy']
       }
     },
     /* Compila archivos sass */
     sass: {
       options: {
-        sourceMap: true,
-        sourceMapContents: true
+        sourceMap: false,
+        sourceMapContents: false
       },
       dist: {
         files: {
@@ -23,56 +23,76 @@ module.exports = function (grunt) {
         }
       }
     },
+    autoprefixer:{
+      option: {
+        map: true
+      },
+      dist:{
+        files:{
+          'src/css/style.css':'src/css/style.css'
+        }
+      }
+    },
+    copy: {
+      html: {
+        cwd: 'src/html',
+        src: ['*.html'],
+        dest: 'dist/',
+        expand: true
+      },
+      css: {
+        cwd: 'src/css',
+        src: ['*.css'],
+        dest: 'dist/css',
+        expand: true
+      },
+      js: {
+        cwd: 'src/js',
+        src: ['*.js'],
+        dest: 'dist/js',
+        expand: true
+      },
+      img: {
+        cwd: 'src/img',
+        src: ['*'],
+        dest: 'dist/img',
+        expand: true
+      },
+      fonts: {
+        cwd: 'src/fonts',
+        src: ['*'],
+        dest: 'dist/fonts',
+        expand: true
+      }
+    },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'src/css',
+          src: ['*.css'],
+          dest: 'dist/css',
+          ext: '.min.css'
+        }]
+      }
+    },
+    clean: {
+      remove_css: ['src/css/*.*']
+    },
     /* Unifica y minifica archivos .js
     uglify: {
-    build: {
-    src: ['src/static/js/*.js'],
-    dest: 'public/js/script.min.js'
-  }
-}, */
-// Copia archivos y carpetas
-copy: {
-  html: {
-    cwd: 'src/html',
-    src: ['*.html'],
-    dest: 'dist/',
-    expand: true
-  },
-  css: {
-    cwd: 'src/css',
-    src: ['*.css'],
-    dest: 'dist/css',
-    expand: true
-  },
-  js: {
-    cwd: 'src/js',
-    src: ['*.js'],
-    dest: 'dist/js',
-    expand: true
-  },
-  img: {
-    cwd: 'src/img',
-    src: ['*'],
-    dest: 'dist/img',
-    expand: true
-  },
-  fonts: {
-    cwd: 'src/fonts',
-    src: ['*'],
-    dest: 'dist/fonts',
-    expand: true
-  }
-
-},
-// Elimina archivos y carpetas
-clean: {
-  remove_css: ['src/css/*.*']
-}
+      build: {
+      src: ['src/static/js/*.js'],
+      dest: 'public/js/script.min.js'
+      }
+    } */
 })
 
 // grunt.loadNpmTasks('grunt-contrib-watch')
 // grunt.loadNpmTasks('grunt-contrib-uglify')
 // grunt.loadNpmTasks('grunt-contrib-clean')
-grunt.loadNpmTasks('grunt-contrib-copy')
-grunt.registerTask('default', ['sass', 'copy'])
+grunt.loadNpmTasks('grunt-contrib-copy');
+grunt.loadNpmTasks('grunt-autoprefixer');
+grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.registerTask('default', ['watch', 'cssmin'])
 }
