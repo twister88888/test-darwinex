@@ -6314,9 +6314,54 @@ header {
   border: 1px solid grey;
   border-width: 0 1px 0 0; }
 
+.nav__switch {
+  display: inline-block;
+  height: 1.375rem;
+  left: 0.625rem;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  position: relative;
+  top: 0.8125rem;
+  width: 38px; }
+  .nav__switch input {
+    display: none; }
+    .nav__switch input:checked + .nav__slider {
+      background-color: #3293be; }
+    .nav__switch input:focus + .nav__slider {
+      box-shadow: 0 0 1px #2196F3; }
+    .nav__switch input:checked + .nav__slider:before {
+      -webkit-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      transform: translateX(22px); }
+
+.nav__slider {
+  background-color: #1B739B;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: .4s;
+  transition: .4s; }
+  .nav__slider:before {
+    background-color: #00B0FF;
+    bottom: -3px;
+    content: "";
+    height: 2.0625rem;
+    left: -0.3125rem;
+    position: absolute;
+    width: 2.0625rem;
+    -webkit-transition: .4s;
+    transition: .4s; }
+  .nav__slider.nav__slider--round {
+    border-radius: 34px; }
+    .nav__slider.nav__slider--round:before {
+      border-radius: 50%; }
+
 .nav__filter {
-  padding-left: 1.5625rem;
-  padding-right: 1.5625rem; }
+  padding-left: 1.1875rem;
+  padding-right: 1.1875rem; }
 
 .nav__order {
   border: 1px solid grey;

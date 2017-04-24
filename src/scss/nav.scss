@@ -13,9 +13,63 @@
   border-width: 0 1px 0 0;
 }
 
+.nav__switch {
+  display: inline-block;
+  height: px-rem(22);
+  left: px-rem(10);
+  margin-left: px-rem(15);
+  margin-right: px-rem(15);
+  position: relative;
+  top: px-rem(13);
+  width: 38px;
+  input {
+    display:none;
+    &:checked + .nav__slider {
+      background-color: #3293be;
+    }
+    &:focus + .nav__slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+    &:checked + .nav__slider:before {
+      -webkit-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      transform: translateX(22px);
+    }
+  }
+}
+
+.nav__slider {
+  background-color: #1B739B;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  &:before {
+    background-color: #00B0FF;
+    bottom: -3px;
+    content: "";
+    height: px-rem(33);
+    left: px-rem(-5);
+    position: absolute;
+    width: px-rem(33);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  &.nav__slider--round {
+    border-radius: 34px;
+    &:before {
+      border-radius: 50%;
+    }
+  }
+}
+
 .nav__filter {
-  padding-left: px-rem(25);
-  padding-right: px-rem(25);
+  padding-left: px-rem(19);
+  padding-right: px-rem(19);
 }
 
 .nav__order {
