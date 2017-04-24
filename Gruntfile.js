@@ -33,6 +33,15 @@ module.exports = function (grunt) {
         }
       }
     },
+    group_css_media_queries: {
+      default_options: {
+        options: {
+        },
+        files: {
+          'src/css/style.css': ['src/css/style.css'],
+        },
+      }
+    },
     copy: {
       html: {
         cwd: 'src/html',
@@ -94,5 +103,5 @@ module.exports = function (grunt) {
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-autoprefixer');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
-grunt.registerTask('default', ['watch', 'cssmin'])
+grunt.registerTask('default', ['watch', 'group_css_media_queries','cssmin'])
 }

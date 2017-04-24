@@ -1,5 +1,3 @@
 EXTRA
-- linter html
-- linter css
-- min.css
+- variables scss
 - media queries al final

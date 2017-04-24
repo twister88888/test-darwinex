@@ -26,6 +26,7 @@
     "grunt-contrib-cssmin": "^2.1.0",
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-group-css-media-queries": "^1.0.1",
     "grunt-sass": "^2.0.0",
     "jquery": "^3.2.1",
     "load-grunt-tasks": "^3.5.2"
