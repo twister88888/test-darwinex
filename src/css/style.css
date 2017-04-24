@@ -6297,10 +6297,18 @@ header {
       padding: 0 0.625rem 0.125rem 0.625rem; } }
 
 .news__item {
+  position: relative;
   width: 52%; }
   @media screen and (max-width: 768px) {
     .news__item {
       width: 64%; } }
+
+.news__arrow {
+  cursor: pointer;
+  font-size: 1.125rem;
+  position: absolute;
+  right: -.5rem;
+  top: .5rem; }
 
 .nav {
   background-color: #373737;
@@ -6368,8 +6376,9 @@ header {
   border-width: 0 0 0 1px;
   float: right;
   padding: 1.55rem 1.5625rem; }
-  .nav__order .glyphicon-chevron-down {
+  .nav__order .glyphicon-menu-down {
     color: #818181;
+    cursor: pointer;
     margin-left: 0.625rem; }
 
 .nav__dropdown {

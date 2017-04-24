@@ -8,8 +8,21 @@
 }
 
 .news__item {
+  position: relative;
   width: 52%;
   @include respond-max($screen-sm) {
     width: 64%;
   }
+}
+
+.news__description {
+
+}
+
+.news__arrow {
+  cursor: pointer;
+  font-size: px-rem(18);
+  position: absolute;
+  right: -.5rem;
+  top: .5rem;
 }

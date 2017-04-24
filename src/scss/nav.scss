@@ -77,8 +77,9 @@
   border-width: 0 0 0 1px;
   float: right;
   padding: px-rem(24.8) px-rem(25);
-  .glyphicon-chevron-down {
+  .glyphicon-menu-down {
     color: #818181;
+    cursor: pointer;
     margin-left: px-rem(10);
   }
 }
