@@ -1,23 +1,21 @@
 module.exports = function (grunt) {
   'use strict'
-  /* Project configuration. */
+
   require('load-grunt-tasks')(grunt)
 
   grunt.initConfig({
-    // Escucha los archivos por si hay cambios y ejecuta las tareas
     watch: {
       css: {
         files: ['src/scss/*.scss'],
         tasks: ['sass', 'autoprefixer', 'copy']
       }
     },
-    /* Compila archivos sass */
     sass: {
       options: {
         sourceMap: false,
         sourceMapContents: false
       },
-      dist: {
+      docs: {
         files: {
           'src/css/style.css': 'src/scss/style.scss'
         }
@@ -27,7 +25,7 @@ module.exports = function (grunt) {
       option: {
         map: true
       },
-      dist:{
+      docs:{
         files:{
           'src/css/style.css':'src/css/style.css'
         }
@@ -46,31 +44,31 @@ module.exports = function (grunt) {
       html: {
         cwd: 'src/html',
         src: ['*.html'],
-        dest: 'dist/',
+        dest: 'docs/',
         expand: true
       },
       css: {
         cwd: 'src/css',
         src: ['*.css'],
-        dest: 'dist/css',
+        dest: 'docs/css',
         expand: true
       },
       js: {
         cwd: 'src/js',
         src: ['*.js'],
-        dest: 'dist/js',
+        dest: 'docs/js',
         expand: true
       },
       img: {
         cwd: 'src/img',
         src: ['*'],
-        dest: 'dist/img',
+        dest: 'docs/img',
         expand: true
       },
       fonts: {
         cwd: 'src/fonts',
         src: ['*'],
-        dest: 'dist/fonts',
+        dest: 'docs/fonts',
         expand: true
       }
     },
@@ -80,28 +78,15 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'src/css',
           src: ['*.css'],
-          dest: 'dist/css',
+          dest: 'docs/css',
           ext: '.min.css'
         }]
       }
-    },
-    clean: {
-      remove_css: ['src/css/*.*']
-    },
-    /* Unifica y minifica archivos .js
-    uglify: {
-      build: {
-      src: ['src/static/js/*.js'],
-      dest: 'public/js/script.min.js'
-      }
-    } */
+    }
 })
 
-// grunt.loadNpmTasks('grunt-contrib-watch')
-// grunt.loadNpmTasks('grunt-contrib-uglify')
-// grunt.loadNpmTasks('grunt-contrib-clean')
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-autoprefixer');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
-grunt.registerTask('default', ['watch', 'group_css_media_queries','cssmin'])
+grunt.registerTask('default', ['group_css_media_queries','cssmin'])
 }

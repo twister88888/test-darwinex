@@ -1,7 +1,4 @@
 .result-items {
-  //display: flex;
-  //justify-content: space-between;
-  //margin-bottom: px-rem(120);
   width: 100%;
 }
 
@@ -15,13 +12,13 @@
   }
 
   .result-items {
-    display: block !important;
+    display: block;
   }
 
   .result__header {
     border: 1px solid $gray;
     border-width: 1px 0 0 0;
-    color: #979797;
+    color: $gray;
     display: flex;
     @include font-size($medium-font);
     justify-content: space-around;
@@ -35,6 +32,7 @@
     border-width: 1px 0 0 0;
     display: block;
     margin: 0;
+    width: 100% !important;
   }
 
   .card__header {
@@ -65,23 +63,23 @@
 .card {
   background-color: #2D2D2D;
   padding:0;
-  margin: 0 px-rem(4);
+  margin: 0 px-rem(4) px-rem(20);
 
   @media (max-width: 425px) {
     margin-bottom: px-rem(10);
-    margin-top: px-rem(10);
+
     &.col-xs-12 {
         float: none;
     }
   }
 
-  @media (min-width: 768px) {
+  @include respond-min($screen-sm){
     &.col-sm-4 {
       width: calc(33.33% - .5rem);
     }
   }
 
-  @media (min-width: 1200px) {
+  @include respond-min(1600px){
     &.col-lg-3 {
       width: calc(25% - .5rem);
     }
@@ -96,7 +94,7 @@
     font-size: px-rem(25);
 
     &:active {
-      color: #00C9FF;
+      color: $blue-lighter;
     }
   }
 }
@@ -118,17 +116,17 @@
 }
 
 .card__number {
-  color: #979797;
+  color: $gray;
   margin-left: px-rem(4);
 }
 
 .card__trade {
-  color: #AAFF00;
+  color: $yellow;
   margin-top: px-rem(5);
 }
 
 .card__button {
-  border: 1px solid #AAFF00;
+  border: 1px solid $yellow;
   border-radius: 10px;
   color: $white;
   cursor: pointer;
@@ -136,8 +134,8 @@
   padding: px-rem(2) px-rem(15);
 
   &:hover {
-    background-color: #AAFF00;
-    color: #272727;
+    background-color: $yellow;
+    color: $gray-dark;
   }
 }
 

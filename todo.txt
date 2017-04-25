@@ -1,3 +1,0 @@
-EXTRA
-- variables scss
-- media queries al final

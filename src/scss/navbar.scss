@@ -27,7 +27,7 @@
     display: inline-block;
     @include font-size($medium-font);
     margin-right: 6px;
-    min-width: 2.182rem;
+    min-width: px-rem(34.912);
     text-align: center;
 
     &.icon-bill {
@@ -50,17 +50,18 @@
   color: #B6B6B6;
   display: block;
   @include font-size($small-font);
-  letter-spacing: .2rem;
-  padding: 1.1rem 1.25rem 1.1rem 1.636rem;
+  letter-spacing: px-rem(3.2);
+  padding: px-rem(17.6) px-rem(20) px-rem(17.6) px-rem(26.176);
   text-transform: uppercase;
 }
 
 .navbar__link {
   color: #adafb2;
   display: block;
-  padding: .6rem .8rem;
+  padding: px-rem(9.6) px-rem(12.8);
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $gray-dark;
     color: $white;
     cursor: pointer;
@@ -82,7 +83,7 @@
     color: $white;
 
     &:hover, &:focus {
-      background-color: #3293be;
+      background-color: $blue-light;
     }
   }
 }
@@ -93,7 +94,7 @@
 
 .navbar-trader__create {
   border-top: 1px solid #0089ad;
-  margin-top: .35rem;
+  margin-top: px-rem(5.6);
   padding: px-rem(12) 0;
   text-align: center;
 }

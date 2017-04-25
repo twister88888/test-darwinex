@@ -1,5 +1,5 @@
 body {
-  color: #fff;
+  color: $white;
   font-family: $open-sans;
   @include font-size($large-font);
   line-height: 1.5;
@@ -29,7 +29,7 @@ header {
 }
 
 .logo {
-  height: 5rem;
+  height: px-rem($header-height);
   margin: 0;
 
   @include respond-max($screen-sm) {
@@ -93,13 +93,13 @@ header {
 .dropdown-menu {
   background-color: $white;
   border-radius: 4px;
-  color: #4A4A4A;
+  color: $gray-light;
   @include font-size($medium-font);
   position: absolute;
 
   &:after {
     border-right: 6px solid transparent;
-    border-bottom: 6px solid #ffffff;
+    border-bottom: 6px solid $white;
     border-left: 6px solid transparent;
     display: inline-block;
     content: '';

@@ -35,11 +35,12 @@
   background-color: $gray-lighter;
   border-radius: 3px;
   color: #00C9FF;
-  font-size: 1.1rem;
+  font-size: px-rem(17.6);
   margin-left: px-rem(3);
   padding: 0 px-rem(3);
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #00C9FF;
   }
 }

@@ -27,7 +27,7 @@
     display:none;
 
     &:checked + .nav__slider {
-      background-color: #3293be;
+      background-color: $blue-light;
     }
 
     &:focus + .nav__slider {

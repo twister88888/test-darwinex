@@ -1,5 +1,6 @@
 .btn {
-  &:active, &:focus {
+  &:active,
+  &:focus {
     box-shadow: none;
     outline: none !important;
   }
@@ -21,8 +22,9 @@
    @include font-size($medium-font);
    width: 100%;
 
-   &:hover, &:focus {
-      background-color: #3293be;
+   &:hover,
+   &:focus {
+      background-color: $blue-light;
       color: $white;
    }
 
@@ -39,13 +41,15 @@
 
 .btn-create {
    background-color: $white;
-   border-radius: 2.5454rem;
+   border-radius: px-rem(38);
    color: $gray-dark;
    border-color: $white;
-   padding: 0.475rem 1.8363rem;
+   padding: px-rem(7.6) px-rem(29.3808);
 
-   &:hover {
-      background-color: #e6e6e6;
+   &:hover,
+   &:active,
+   &:focus {
+      background-color: $white;
       border-color: $white;
       color: $gray-dark;
    }
@@ -55,20 +59,20 @@
   background-color: transparent;
   border: 1px solid $gray-lighter;
   border-radius: 50%;
-  color: #D8D8D8;
+  color: $gray-li;
   font-size: .8rem;
   padding: px-rem(8) px-rem(10);
 
   &:hover {
     border: none;
-    color: #D8D8D8;
+    color: $gray-li;
     transition: all 0.2s ease-in-out;
   }
 }
 
 .btn-view {
-  color: #6C6C6C;
-  font-size: px-rem(27);
+  color: $gray;
+  font-size: px-rem(27); /****/
 
   &:hover {
     color: $white;
@@ -78,11 +82,11 @@
 .btn-view--active {
   background-color: $gray-lighter;
   border-radius: 0;
-  color: #00C9FF;
+  color: $blue-lighter;
   box-shadow: none;
 
   &:hover {
-    color: #00C9FF;
+    color: $blue-lighter;
   }
 }
 
