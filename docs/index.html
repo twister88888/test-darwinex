@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Test maquetación para Darwinex</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
   <header class="header">
@@ -25,7 +25,7 @@
           </button>
           <h1 class="logo">
             <a href="#" title="Darwinex">
-              <img src="img/logo-darwinex.svg" alt="Darwinex" class="logo__img" />
+              <img src="../img/logo-darwinex.svg" alt="Darwinex" class="logo__img" />
             </a>
           </h1>
         </div>
@@ -62,7 +62,7 @@
     </aside>
     <div class="container-fluid">
       <div class="row">
-        <div class="main-column" role="main">
+        <div class="main-column col-sm-12 nopadding" role="main">
           <article>
             <div class="user">
               <span class="user__icon">AIS</span>
@@ -155,7 +155,7 @@
                   <div>D-Score</div>
                 </div>
                 <div class="result-items">
-                  <div class="card">
+                  <div class="card col-xs-12 col-sm-4 col-lg-3">
                     <div class="card__header">
                       <div class="card__name">
                         <span class="btn-icon"><i class="icon icon-circle icon-circle--pink"></i></span>
@@ -193,7 +193,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card col-xs-12 col-sm-4 col-lg-3">
                     <div class="card__header">
                       <div class="card__name">
                         <span class="btn-icon"><i class="icon icon-circle icon-circle--pink"></i></span>
@@ -231,7 +231,45 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card col-xs-12 col-sm-4 col-lg-3">
+                    <div class="card__header">
+                      <div class="card__name">
+                        <span class="btn-icon"><i class="icon icon-circle icon-circle--pink"></i></span>
+                        <span>BWE</span>
+                        <span class="card__number">#12</span>
+                      </div>
+                      <div class="card__trade">
+                        <span>180.22</span>
+                        <span class="card__button">Trade</span>
+                      </div>
+                    </div>
+                    <div class="card__graph">
+                      <img src="http://placehold.it/172x58">
+                    </div>
+                    <div class="card__footer">
+                      <span class="btn-icon"><i class="icon icon-folder"></i></span>
+                      <span class="card__filter">4</span>
+                    </div>
+                    <div class="card__detail">
+                      <div class="card__detail-item">
+                        <span class="card__text">Capital invertido</span>
+                        <span class="card__detail-item--white">$ 1600.00</span>
+                      </div>
+                      <div class="card__detail-item">
+                        <span class="card__text">Retorno</span>
+                        <span class="card__detail-item--green">7.0 %</span>
+                      </div>
+                      <div class="card__detail-item">
+                        <span class="card__text">Drawdown</span>
+                        <span class="card__detail-item--red">-37 %</span>
+                      </div>
+                      <div class="card__detail-item">
+                        <span class="card__text">Score</span>
+                        <span><i class="icon icon-owl"></i> <u>78.2</u></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card col-xs-12 col-sm-4 col-lg-3">
                     <div class="card__header">
                       <div class="card__name">
                         <span class="btn-icon"><i class="icon icon-circle icon-circle--pink"></i></span>
@@ -277,8 +315,8 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
   <script>
     $(".navbar-toggle").click(function(e) {
         e.preventDefault();
